@@ -1,63 +1,96 @@
+
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-    <header>
-        <a href="#">Fozia.</a>
-    <nav>
-       
-            <a href="home.html">Home</a>
-            <a href="about.html">About Me</a>
-            <a href="CV.html">CV</a>
-            <a href="places.html">Places to Visit</a>
-            <a href="contact.html">Contact Me</a>
-            
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact</title>
+            <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+         
+            <link rel="stylesheet" href="/dist/output.css">
+        </head>
+        <body class="bg-gray-100">
+            <header class="bg-teal-500">
+                
+                <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+                    <a href="#" class="text-2xl font-bold text-gray-800">Fozia.</a>
+                
+                    <label for="toggle-menu" class="block bg-gray-200 text-gray-600 p-2 cursor-pointer md:hidden ml-auto">
+                        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                      </label>
+                    
+                </div>
+                    <nav class="space-x-4 hidden md:flex justify-end" id="menu">
+                        <a href="home.html" class="text-gray-600 hover:text-gray-800">Home</a>
+                        <a href="about.html" class="text-gray-600 hover:text-gray-800">About Me</a>
+                        <a href="CV.html" class="text-gray-800 font-bold">CV</a>
+                        <a href="places.html" class="text-gray-600 hover:text-gray-800">Places to Visit</a>
+                        <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Me</a>
+                    </nav>
+               
+            </header>
         
-       
-    </nav>
-    </header>
+         
+
     <br>
+
     <main>
-        <div>
-            <li><i class='bx bx-envelope'></i> fozia@gmail.com</li>
-            <li><i class='bx bx-phone' ></i> 555-555-555</li>
-           
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2 ">
+                    <ul class="contact__info space-y-4 items-center justify-center font-semibold font-sans text-lg mt-4">
+                        <li><i class='bx bx-envelope '></i> fozia@gmail.com</li>
+                        <li><i class='bx bx-phone'></i> 555-555-5555</li>
+                        <li><i class='bx bx-location-plus'></i>123 main street, Addis Ababa, Ethiopia, 12345</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <fieldset class="contact__form font-semibold font-lg ">
+                        <legend class="font-bold ">Contact Me</legend><br>
+                        <label for="name">Name:</label>
+                        <input type="text" class="w-60 mb-4 border border-gray-400 rounded"><br>
+                        <label for="email">Email:</label>
+                        <input type="text" class="w-60 mb-4 border border-gray-400 rounded"><br>
+                        <label for="message">Send me a message:</label><br>
+                        <textarea name id cols="40" rows="10" placeholder="Type a message" class="w-70 mb-4 border border-gray-400 rounded"></textarea> <br>
+                        <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded">Submit</button>
+                        <button type="reset" class="px-4 py-2 bg-gray-300 text-gray-700 rounded">Reset</button>
+                    </fieldset>
+                </div>
+            </div>
         </div>
-        
-        
-        <br>
-        <fieldset>
-            <legend>Contact me</legend>
-            <label for="name">Name:</label>
-            <input type="text">
-           <br>
-           <br>
-            <label for="email">email:</label>
-            <input type="text">
-            <br>
-            <label for="message"> Send me a message:</label>
-            <br>
-            <textarea name id cols="30" rows="10" placeholder="Type a message"></textarea>
-            <br>
-            <button type="submit">submit</button>
-            <button type="reset">reset</button>
-        </fieldset>
     </main>
+
     <br>
     <br>
     <hr>
-    <footer>
-        <div>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin-square' ></i></a>
-            <a href="#" class="btn">Subscribe</a>
+
+    <footer class="text-white">
+        <div class="container mx-auto">
+            <div class="footer__contact-icons flex items-center justify-center space-x-4 py-4">
+                <a href="https://www.facebook.com/" class="text-gray-900"><i class='bx bxl-facebook'></i></a>
+                <a href="https://twitter.com/" class="text-gray-900"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/" class="text-gray-900"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.youtube.com/" id="subscribe-btn" class="text-gray-900">Subscribe</a>
+                <p class="text-gray-900">&copy; 2023 Fozia. All Rights Reserved</p>
+            </div>
         </div>
     </footer>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+    const header = document.querySelector("header");
+   const nav = document.querySelector("nav");
+
+header.addEventListener("mouseenter", () => {
+  nav.classList.remove("hidden");
+});
+
+header.addEventListener("mouseleave", () => {
+  nav.classList.add("hidden");
+});
+</script>
 </html>

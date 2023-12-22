@@ -3,43 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/2.2.7/tailwind.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/dist/output.css">
 </head>
 <body>
-    <header>
-        <a href="#">Fozia.</a>
-
-    <nav>
-       
-            <a href="">home</a>
-            <a href="">About me</a>
-            <a href="">CV</a>
-            <a href="">Places to Visit</a>
-            <a href="">Contact Me</a>
-        
-       
-    </nav>
-    </header>
-    <body>
-        <header class="header">
-        <img src="/src/images/computer.jpg" alt="" width="400" height="300">
-       <h2> Hi! This is Fozia </h2>
-            <p>Here, you'll find a collection of pages dedicated to showcasing my work, sharing my experiences, and providing valuable resources. Each page offers a unique perspective on my journey and passions. Explore what you can expect from each section:</p>
-       
-    </header>
-
-    </main>
-    <hr>
-    <footer>
+    <header class="header bg-teal-500">
+      <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+        <a href="#" class="logo text-white">Fozia</a>
+        <input type="checkbox" id="toggle-menu" class="hidden">
+            <label for="toggle-menu" class=" flex block bg-gray-200 text-gray-600 p-2 cursor-pointer md:hidden  flex-col">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </label>
+      
+        <nav class="header__container  hidden md:flex justify-end text-white space-x-4" id="menu">
+          <a href="home.html" class="active text-blue-800">Home</a>
+          <a href="aboutme.html"class="hover:text-blue-800">About me</a>
+          <a href="CV.html" class="hover:text-blue-800">CV</a>
+          <a href="places.html" class="hover:text-blue-800">Places to Visit</a>
+          <a href="contact.html" class="hover:text-blue-800">Contact Me</a>
+        </nav>
+      </header>
+      <div class="home-main flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-900">
+        <img class="home-main__image w-96 h-auto mb-4 mt-5" src="/images/homeimg.jpg" alt="">
         <div>
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-twitter'></i></a>
-            <a href="#"><i class='bx bxl-linkedin-square'></i></a>
-            <a href="#" class="btn">Subscribe</a>
+          <h2 class="text-center text-2xl font-bold text-teal-500">Hi! This is Fozia</h2>
+          <p class="home-main__paragraph text-center mb-8 px-5 max-w-md text-teal-500">
+            Here, you'll find a collection of pages dedicated to showcasing my work, sharing my experiences, and providing valuable resources. Each page offers a unique perspective on my journey and passions. Explore what you can expect from each section:
+          </p>
         </div>
- 
-    </footer>
-   
+      </div>
+      <footer class="home-footer bg-gray-900">
+        <div class="footer__contact-icons flex items-center justify-center space-x-4">
+          <a href="https://www.facebook.com/" class="text-teal-500">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="https://twitter.com/" class="text-teal-500">
+            <i class="bx bxl-twitter"></i>
+          </a>
+          <a href="https://www.linkedin.com/" class="text-teal-500">
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+          <a href="https://www.youtube.com/" id="subscribe-btn" class="text-teal-500">Subscribe</a>
+          <p class="footer-p text-teal-500">&copy;2023 Fozia. All Rights Reserved</p>
+        </div>
+      </footer>
+     
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="script.js"></script>
 </body>
 </html>

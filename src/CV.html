@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="bg-gray-100">
+   <header class="bg-teal-500 ">
+        <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-gray-800">Fozia.</a>
+            <input type="checkbox" id="toggle-menu" class="hidden">
+            <label for="toggle-menu" class=" flex block bg-gray-200 text-gray-600 p-2 cursor-pointer md:hidden  flex-col">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </label>
+            <nav class="space-x-4 hidden md:flex" id="menu">
+                <a href="home.html" class="text-gray-600 hover:text-gray-800">Home</a>
+                <a href="aboutme.html" class="text-gray-600 hover:text-gray-800">About Me</a>
+                <a href="CV.html" class="text-gray-800 font-bold">CV</a>
+                <a href="places.html" class="text-gray-600 hover:text-gray-800">Places to Visit</a>
+                <a href="contact.html" class="text-gray-600 hover:text-gray-800">Contact Me</a>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="container mx-2py-8 px-6">
+        <h1 class="text-3xl font-bold">Fozia Mohammed</h1>
+        <p class="text-gray-600">Software Professional | Travel Enthusiast</p>
+        <a href="contact.html" class="inline-block mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg font-bold">Contact Me</a>
+        <div class="flex flex-col md:flex-row items-center mt-12 gap-0px">
+            <div class="md:w-2/3">
+                <h2 class="text-2xl font-bold">CV</h2>
+                <p class="text-gray-600 mt- min-w-xs">Welcome to my CV page. Here you'll find a comprehensive <br>overview of my professional background, qualifications, and skills.</p>
+            </div>
+            <img src="/images/cv.jpg" alt="" class="w-xs md:w-1/3 mt-6 md:mt-0 mr-50px">
+        </div>
+        <h3 class="text-2xl font-bold mt-12">Education</h3>
+        <ul class="list-disc list-inside mt-4">
+            <li>Bachelor of Software Engineering, Addis Ababa University (Expected graduation: June 2026)</li>
+            <li>Relevant coursework: Data structures, Algorithms, Web Development, Database Systems</li>
+            <li>Diploma from Ethioparents' school</li>
+        </ul>
+        <h2 class="text-2xl font-bold mt-12">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-4">
+            <div class="text-center">
+                <i class="bx bx-code text-4xl text-orange-500"></i>
+                <h3 class="text-lg font-bold mt-2">Programming Languages</h3>
+                <p class="text-gray-600">Java, Python, JavaScript</p>
+            </div>
+            <div class="text-center">
+                <i class="bx bx-paint text-4xl text-orange-500"></i>
+                <h3 class="text-lg font-bold mt-2">Front-end Development</h3>
+                <p class="text-gray-600">HTML, CSS, Responsive Web Design</p>
+            </div>
+            <div class="text-center">
+                <i class="bx bxl-mongodb text-4xl text-orange-500"></i>
+                <h3 class="text-lg font-bold mt-2">Database Management</h3>
+                <p class="text-gray-600">SQL, Relational Databases</div>
+            <div class="text-center">
+                <i class="bx bx-brain text-4xl text-orange-500"></i>
+                <h3 class="text-lg font-bold mt-2">Problem Solving</h3>
+                <p class="text-gray-600">Critical Thinking, Analytical Skills</p>
+            </div>
+        </div>
+        <h2 class="text-2xl font-bold mt-12">Experience</h2>
+        <div class="bg-white shadow-md rounded my-6 overflow-x-auto">
+          <table class="min-w-max w-full table-auto">
+            <thead>
+              <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                <th class="py-3 px-6 text-left">Job Title</th>
+                <th class="py-3 px-6 text-left">Company</th>
+                <th class="py-3 px-6 text-left">Duration</th>
+                <th class="py-3 px-6 text-left">Responsibilities/Key Accomplishments</th>
+              </tr>
+            </thead>
+            <tbody class="text-gray-600 text-sm font-light">
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left">Software Development Intern</td>
+                <td class="py-3 px-6 text-left">XYZ Tech Solutions</td>
+                <td class="py-3 px-6 text-left">Summer 2023</td>
+                <td class="py-3 px-6 text-left">
+                  <ul class="list-disc list-inside">
+                    <li>Collaborated with a team of developers to create and test software features</li>
+                    <li>Assisted in debugging and troubleshooting software issues</li>
+                  </ul>
+                </td>
+              </tr>
+              <tr class="border-b border-gray-200 hover:bg-gray-100">
+                <td class="py-3 px-6 text-left">Web Development Intern</td>
+                <td class="py-3 px-6 text-left">ABC Web Agency</td>
+                <td class="py-3 px-6 text-left">Summer 2022</td>
+                <td class="py-3 px-6 text-left">
+                  <ul class="list-disc list-inside">
+                    <li>Developed responsive and user-friendly websites</li>
+                    <li>Implemented website enhancements and optimizations</li>
+                    <li>Collaborated with designers and content creators to ensure seamless website functionality</li>
+                  </ul>
+                </td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+    </main>
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <p>&copy; 2023 Fozia Mohammed. All Rights Reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-300 hover:text-white"><i class=""></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    <script src="script.js">
+      
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="/dist/output.css">
+</head>
+<body class="about-body bg-gray-300">
+    <header class="header bg-teal-500">
+        <div class="container mx-auto py-4 px-6 flex items-center justify-between">
+       
+            <a href="#" class="logo text-3xl font-bold">Fozia.</a>
+            <input type="checkbox" id="toggle-menu" class="hidden">
+            <label for="toggle-menu" class=" flex block bg-gray-200 text-gray-600 p-2 cursor-pointer md:hidden  flex-col">
+              <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </label>
+       
+        <nav class="header__container hidden flex justify-end text-white space-x-4" id="menu">
+            <div class="menu space-x-4">
+                <a href="home.html" class="header__menu-link hover:text-blue-800">Home</a>
+                <a href="aboutme.html" class="active text-blue-800">About Me</a>
+                <a href="CV.html" class="hover:text-blue-800">CV</a>
+                <a href="places.html" class="hover:text-blue-800">Places to Visit</a>
+                <a href="contact.html" class="hover:text-blue-800">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+    <main class="about py-10">
+        <div class="about__content max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-around space-x-10">
+            <img src="/images/techgirl.jpg" alt="" class="h-72 w-96">
+            <div class="about__text">
+                <h2 class="text-4xl font-bold mb-5">About Me</h2>
+                <p class="text-lg leading-7 mb-8 italic font-light">Welcome to my portfolio! I'm Fozia, a passionate web developer with a keen eye for design and a drive for creating user-centric experiences. With over five years of experience in the industry, I have had the opportunity to work with diverse clients and contribute to a wide range of projects.</p>
+                <div><a href="CV copy.html" class="about__button bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded-full text-lg">View CV</a></div>
+            </div>
+        </div>
+    </main>
+    <hr>
+    <footer class="about-footer bg-gray-300">
+        <div class="footer__contact-icons flex items-center justify-center gap-3">
+            <a href="https://www.facebook.com/"><i class="bx bxl-facebook text-3xl"></i></a>
+            <a href="https://twitter.com/"><i class="bx bxl-twitter text-3xl"></i></a>
+            <a href="https://www.linkedin.com/"><i class="bx bxl-linkedin-square text-3xl"></i></a>
+            <a href="https://www.youtube.com/" id="subscribe-btn" class="text-blue-500 hover:text-blue-600">Subscribe</a>
+            <p class="text-sm">&copy; All Rights Reserved</p>
+        </div>
+    </footer>
+    <script src="https://cdn.tailwindcss.com"></script> 
+    <script src="script.js"></script>
+</body>
+</html>
